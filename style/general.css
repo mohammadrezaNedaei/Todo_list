@@ -1,0 +1,103 @@
+
+body{
+    background-image: 
+    linear-gradient(to right, rgb(186, 255, 181) , antiquewhite);
+}
+
+.base-container{
+    display: grid;
+    grid-template-columns: minmax(430px,1fr)  minmax(450px,1fr);
+}
+.alert-countainer {
+    opacity: 0;
+    width: 25%;
+    background-color: #e8e8e8;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    position: relative;
+    top: -7rem;
+}
+
+.input-part{
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+}
+
+.todo-input{
+    margin-top: 60px;
+    text-align: center;
+    height: 50px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    border-color: rgb(246, 220, 185);
+}
+
+.todo-name{
+    padding: 0;
+    min-width: 150px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.set-button{
+    font-size: 16px;
+    border: 0;
+    background-color: rgb(78, 255, 47);
+    height: 53px;
+}
+::placeholder {
+   text-align: center; 
+}
+@media (max-width : 900px) {
+    .base-container{
+    grid-template-columns: minmax(200px,1fr);
+    }
+.input-part{
+    grid-template-columns: 3fr 1fr;
+    justify-content: center;
+    column-gap: 8px;
+    }
+.todo-input{
+    margin-top: 0;
+    }
+}
+.show-todo{
+    display: block;
+    grid-template-columns: 1fr;
+}
+
+.todo-section-title{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.todo-list{
+    display: block;
+}
+.todo-container{
+    display: flex;
+    justify-content: space-between;
+}
+.done-button{
+    width: 100px;
+    font-size: 15px;
+    height: 40px;
+    border: 0;
+    background-color: rgb(255, 213, 47);
+}
+
+.todo-list-name{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.delete-button{ 
+    width: 100px;
+    font-size: 15px;
+    height: 40px;
+    border: 0;
+    background-color: red;
+    color: white;
+}

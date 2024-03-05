@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/general.css">
+    <script src="script/general.js">
+    </script>
+    <title>ToDo List</title>
+    <link rel="icon" href="pictures/todo-icon.jpg">
+</head>
+<body>
+    <div class="base-container">
+        <div class="input-part">
+            <input type="text" placeholder="todo name"
+             class="todo-name todo-input" onkeypress="enterKeyPressed(event)">
+            <button class="set-button todo-input" id="set" onclick="
+            const todoName = document.querySelector('.todo-name').value;
+            if (todoName === '') {
+                alert('you should put a todo 👎');
+            }else{
+                setToDo(todoName);
+            }
+            ">set</button>
+        </div>
+        <div class="show-todo-js show-todo">
+            <p class="todo-section-title">todo List</p>
+            <div class="todos-js todo-list">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
